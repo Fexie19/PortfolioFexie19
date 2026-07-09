@@ -5,6 +5,7 @@ import { MapPin, GraduationCap, Award, Palette, Code, Sparkles } from "lucide-re
 import { SectionTitle } from "../ui/SectionTitle";
 import { GlassCard, StatCard } from "../ui/GlassCard";
 import { StaggerContainer, staggerItem } from "../ui/Animation";
+import Image from "next/image";
 
 const quickFacts = [
   { icon: MapPin, label: "Location", value: "Jakarta, Indonesia", color: "primary" as const },
@@ -49,21 +50,7 @@ export function AboutSection() {
               <div className="relative w-full h-full rounded-full overflow-hidden shadow-2xl border-4 border-white">
                 <div className="w-full h-full bg-gradient-to-br from-[#DFF4FF] via-[#A7D8FF] to-[#5CB8FF] flex items-center justify-center">
                   <div className="text-center">
-                    <div className="w-24 h-24 sm:w-32 sm:h-32 mx-auto mb-3 rounded-full bg-white/30 backdrop-blur-sm flex items-center justify-center">
-                      <svg
-                        className="w-12 sm:w-16 h-12 sm:h-16 text-white/80"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                        />
-                      </svg>
-                    </div>
+                    <Image src="/photo.jpeg" alt="fotoProfil" fill className="absolute inset-0 w-full h-full object-cover"/>
                   </div>
                 </div>
               </div>
@@ -74,14 +61,14 @@ export function AboutSection() {
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                 className="absolute -right-4 top-8 w-12 h-12 bg-white rounded-xl shadow-lg flex items-center justify-center"
               >
-                <span className="text-2xl">🎨</span>
+                <Image src="/Gdeveloper.webp" alt="developer" width={40} height={40} />
               </motion.div>
               <motion.div
                 animate={{ }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
                 className="absolute -left-4 bottom-12 w-12 h-12 bg-white rounded-xl shadow-lg flex items-center justify-center"
               >
-                <span className="text-2xl">💻</span>
+                <Image src="/AfterEffect.webp" alt="developer" width={40} height={40} />
               </motion.div>
             </div>
           </motion.div>

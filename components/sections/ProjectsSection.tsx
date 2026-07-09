@@ -85,7 +85,7 @@ const categories = [
         description: "Award-winning personal portfolio design",
         tags: ["Next.js", "Framer Motion", "TypeScript"],
         image: "/projects/web-2.jpg",
-        link: " ",
+        link: "https://portfolio-fexie19.vercel.app/",
       },
       {
         title: "Dashboard Application",

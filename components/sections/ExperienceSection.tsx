@@ -92,6 +92,14 @@ export function ExperienceSection() {
           {/* Right - Timeline */}
           <div className="lg:col-span-2">
             <TimelineItem
+              date="2025 - Present"
+              title="Active Member"
+              company="Google Developer Groups on Campus IPB University"
+              description="Learn about Data Science and AI currently."
+              tags={["Artificial Intelegents", "Data Science", "Algorythm", "AI Trainer"]}
+            />
+
+            <TimelineItem
               date="2023 - Present"
               title="Freelance Motion Graphic Designer & Video Editor"
               company="Fiverr & Upwork"

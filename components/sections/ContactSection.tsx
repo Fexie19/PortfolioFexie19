@@ -38,7 +38,7 @@ const socialLinks = [
   {
     icon: "linkedin",
     label: "LinkedIn",
-    href: "https://linkedin.com/dafajaya/in",
+    href: "https://linkedin.com/in/dafajaya",
     color: "hover:text-[#0077B5] hover:border-[#0077B5]",
   },
   // {
