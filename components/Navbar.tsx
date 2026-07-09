@@ -72,7 +72,7 @@ export function Navbar() {
             >
               <Link href="#home" className="flex items-center gap-2">
                 <span className="text-2xl font-bold bg-gradient-to-r from-[#5CB8FF] to-[#16243A] bg-clip-text text-transparent">
-                  Dafa
+                  
                 </span>
               </Link>
             </motion.div>
