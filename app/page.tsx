@@ -71,7 +71,7 @@ export default function Home() {
       <AnimatePresence>{isLoading && <LoadingScreen />}</AnimatePresence>
 
       {!isLoading && (
-        <main className="relative">
+        <main className="relative overflow-x-hidden">
           <ScrollProgress />
           <Navbar />
           <HeroSection />
