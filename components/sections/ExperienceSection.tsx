@@ -95,8 +95,8 @@ export function ExperienceSection() {
               date="2025 - Present"
               title="Active Member"
               company="Google Developer Groups on Campus IPB University"
-              description="Learn about Data Science and AI currently."
-              tags={["Artificial Intelegents", "Data Science", "Algorythm", "AI Trainer"]}
+              description="Learn about Data Science and Artificial Intelligence currently."
+              tags={["Artificial Intelligence", "Data Science", "Algorithm", "AI Trainer"]}
             />
 
             <TimelineItem

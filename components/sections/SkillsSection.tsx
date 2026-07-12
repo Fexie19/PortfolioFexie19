@@ -10,10 +10,8 @@ import { StaggerContainer, staggerItem } from "../ui/Animation";
 const technicalSkills = [
   { name: "Adobe After Effects", percentage: 95, color: "#5CB8FF" },
   { name: "Microsoft Office", percentage: 90, color: "#5CB8FF" },
-  { name: "React", percentage: 80, color: "#5CB8FF" },
-  { name: "TypeScript", percentage: 80, color: "#5CB8FF" },
-  { name: "Laravel", percentage: 75, color: "#5CB8FF" },
-  { name: "Ubuntu Server", percentage: 65, color: "#5CB8FF" },
+  { name: "Web Development", percentage: 90, color: "#5CB8FF" },
+  { name: "Machine Learning", percentage: 75, color: "#5CB8FF" },
 ];
 
 const softSkills = [

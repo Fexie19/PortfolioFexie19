@@ -176,9 +176,11 @@ export function HeroSection() {
                   View Projects
                 </Button>
               </Link>
-              <Button variant="secondary" size="lg" icon={Download}>
-                Download CV
-              </Button>
+              <a href="/Dafa_Jaya_Priyatna_CV_ATS.pdf" download>
+                <Button variant="secondary" size="lg" icon={Download}>
+                  Download CV
+                </Button>
+              </a>
               <Link href="#contact">
                 <Button variant="ghost" size="lg" icon={Mail}>
                   Contact Me
@@ -214,15 +216,24 @@ export function HeroSection() {
                       </svg>
                     ),
                   },
-                  // {
-                  //   name: "Stack Overflow",
-                  //   href: "https://fiverr.com",
-                  //   icon: (
-                  //     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  //       <path />
-                  //     </svg>
-                  //   ),
-                  // },
+                  {
+                    name: "Discord",
+                    href: "https://discord.gg/qG8C8dHq",
+                    icon: (
+                      <svg xmlns="http://w3.org" viewBox="0 0 127.14 96.36" width="1em" height="1em" fill="currentColor">
+                        <path d="M107.7,8.07A105.15,105.15,0,0,0,77.26,0a77.19,77.19,0,0,0-3.3,6.83A96.67,96.67,0,0,0,53.22,6.83,77.19,77.19,0,0,0,49.88,0,105.15,105.15,0,0,0,19.44,8.07C3.66,31.58-1.86,54.65,1,77.53A105.73,105.73,0,0,0,32,96.36a74.37,74.37,0,0,0,6.72-11A68.6,68.6,0,0,1,28,80.77c1.1-.81,2.16-1.66,3.18-2.54a74.11,74.11,0,0,0,74.74,0c1,1,2.08,1.73,3.19,2.54a68.55,68.55,0,0,1-10.74,4.55,74.07,74.07,0,0,0,6.73,11,105.54,105.54,0,0,0,31-18.83C129.58,48.24,123.3,25.47,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53S36.18,40.36,42.45,40.36,53.83,46,53.83,53,48.72,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.24,60,73.24,53S78.41,40.36,84.69,40.36,96.07,46,96.07,53,91,65.69,84.69,65.69Z" />
+                      </svg>
+                    ),
+                  },
+                  {
+                    name: "Fiverr",
+                    href: "https://www.fiverr.com/s/qDEo8Wg",
+                    icon: (
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="1em" height="1em" fill="currentColor">
+                        <path d="M121.1 170h34.75V67.04H90.21v-7.72s0-9.01 9.01-9.01h21.88V22H99.22s-43.76 0-43.76 37.32v7.72h-19.3v28.31h19.3v74.64h34.75V95.36h30.89V170Z" />
+                      </svg>
+                    ),
+                  },
                 ].map((social) => (
                   <motion.a
                     key={social.name}
@@ -249,7 +260,7 @@ export function HeroSection() {
             className="order-1 lg:order-2 flex justify-center lg:justify-end"
           >
             <motion.div
-              style={{ }}
+              style={{}}
               className="relative"
             >
               {/* Decorative elements */}
@@ -289,8 +300,9 @@ export function HeroSection() {
                 className="relative"
               >
                 <div className="relative w-72 h-96 sm:w-80 sm:h-[440px] lg:w-96 lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl border border-white/50">
-                  {/* Placeholder Image - Replace with actual photo */}
+                   {/* <Image src="/MainProfile.jpeg" alt="Profile Picture" fill className="object-cover" /> */}
                   <div className="absolute inset-0 bg-gradient-to-br from-[#DFF4FF] via-[#A7D8FF] to-[#5CB8FF]">
+                   
                     {/* Profile silhouette */}
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="w-40 h-40 rounded-full bg-white/30 backdrop-blur-sm flex items-center justify-center">
@@ -313,7 +325,7 @@ export function HeroSection() {
                           <span className="text-sm font-medium text-white/80">Dafa Jaya Priyatna</span>
                         </div>
                       </div>
-                    </div>
+                    </div> 
                   </div>
 
                   {/* Overlay gradient */}
@@ -356,7 +368,7 @@ export function HeroSection() {
 
                 {/* Floating badge - Right */}
                 <motion.div
-                  animate={{ }}
+                  animate={{}}
                   transition={{
                     duration: 5,
                     repeat: Infinity,
@@ -398,7 +410,7 @@ export function HeroSection() {
       </div>
 
       {/* Scroll indicator */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1 }}
@@ -426,7 +438,7 @@ export function HeroSection() {
             />
           </div>
         </motion.div>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 }
