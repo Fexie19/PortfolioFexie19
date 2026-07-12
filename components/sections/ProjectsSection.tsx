@@ -78,7 +78,7 @@ const categories = [
         title: "Photo Music Video",
         description: "Beat-synced music video with creative transitions",
         tags: ["After Effects", "VFX"],
-        image: "/pmv.jfif",
+        image: "/pmv.jpeg",
         link: "https://www.instagram.com/p/C-STBDby7Fh/?igsh=anNzYTQ4MGM2eDh1",
       },
       {
@@ -92,7 +92,7 @@ const categories = [
         title: "Typhography Music Video",
         description: "Kinetic typography music video with synchronized lyrics and visuals",
         tags: ["After Effects"],
-        image: "/pmv2.jfif",
+        image: "/pmv2.jpeg",
         link: "https://www.instagram.com/p/C-jJuXqSSCz/?igsh=MW5xNzJ4ajd0eTk2NA==",
       },
     ],
