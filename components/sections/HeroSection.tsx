@@ -300,10 +300,10 @@ export function HeroSection() {
                 className="relative"
               >
                 <div className="relative w-72 h-96 sm:w-80 sm:h-[440px] lg:w-96 lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl border border-white/50">
-                   {/* <Image src="/MainProfile.jpeg" alt="Profile Picture" fill className="object-cover" /> */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#DFF4FF] via-[#A7D8FF] to-[#5CB8FF]">
+                    <Image src="/1000025120.jpg" alt="Profile Picture" fill className="object-cover" />
+                  {/* <div className="absolute inset-0 bg-gradient-to-br from-[#DFF4FF] via-[#A7D8FF] to-[#5CB8FF]">
                    
-                    {/* Profile silhouette */}
+                     Profile silhouette 
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="w-40 h-40 rounded-full bg-white/30 backdrop-blur-sm flex items-center justify-center">
                         <div className="text-center">
@@ -326,7 +326,7 @@ export function HeroSection() {
                         </div>
                       </div>
                     </div> 
-                  </div>
+                  </div> /*}
 
                   {/* Overlay gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#16243A]/30 to-transparent" />
