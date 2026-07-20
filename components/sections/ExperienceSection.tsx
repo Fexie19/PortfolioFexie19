@@ -95,7 +95,7 @@ export function ExperienceSection() {
               date="2026 - Present"
               title="Barista"
               company="Kopi Calf Group"
-              description="My first experience in F&B corporate."
+              description="My first experience in the F&B industry, learning customer service and coffee craftsmanship."
               tags={["Food and Drink", "Barista", "Coffee Shop",]}
             />
             
