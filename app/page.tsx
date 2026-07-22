@@ -14,6 +14,7 @@ import { WhyHireSection } from "../components/sections/WhyHireSection";
 import { ContactSection } from "../components/sections/ContactSection";
 import { Footer } from "../components/Footer";
 import { ScrollProgress } from "../components/ScrollProgress";
+import { LazySection } from "../components/LazySection";
 
 function LoadingScreen() {
   return (
@@ -71,14 +72,39 @@ export default function Home() {
           <ScrollProgress />
           <Navbar />
           <HeroSection />
+          
+          <LazySection>
           <AboutSection />
+          </LazySection>
+
+          <LazySection>
           <ExperienceSection />
+          </LazySection>
+          
+          <LazySection>
           <EducationSection />
+          </LazySection>
+
+          <LazySection>
           <SkillsSection />
+          </LazySection>
+
+          <LazySection>
           <ProjectsSection />
+          </LazySection>
+
+          <LazySection>
           <ServicesSection />
+          </LazySection>
+
+          <LazySection>
           <WhyHireSection />
+          </LazySection>
+
+          <LazySection>
           <ContactSection />
+          </LazySection>
+            
           <Footer />
         </main>
     </>
