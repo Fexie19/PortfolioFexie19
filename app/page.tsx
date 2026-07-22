@@ -14,7 +14,7 @@ import { WhyHireSection } from "../components/sections/WhyHireSection";
 import { ContactSection } from "../components/sections/ContactSection";
 import { Footer } from "../components/Footer";
 import { ScrollProgress } from "../components/ScrollProgress";
-import { LazySection } from "../components/LazySection";
+import LazySection from "../components/LazySection";
 
 function LoadingScreen() {
   return (
