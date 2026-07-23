@@ -54,7 +54,11 @@ function LoadingScreen() {
   );
 }
 
-
+const Intro = lazy(() => 
+  import("../components/sections/HeroSection"). then((module) => ({
+    default: module.HeroSection,
+  }))
+);
 
 const About = lazy(() => 
   import("../components/sections/AboutSection"). then((module) => ({
@@ -128,7 +132,11 @@ export default function Home() {
         <main className="relative overflow-x-hidden">
           <ScrollProgress />
           <Navbar />
-          <HeroSection />
+          <LazySection>
+            <Suspense fallback={<div> </div>}>
+              <Intro />
+            </Suspense>
+          </LazySection>
           
           <LazySection>
             <Suspense fallback={<div> </div>}>
