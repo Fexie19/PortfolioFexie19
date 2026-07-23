@@ -56,7 +56,7 @@ function LoadingScreen() {
 
 
 
-const About = React.lazy(() => import("./AboutSection"));
+const About = React.lazy(() => import("../components/sections/AboutSection"));
 
 
   
