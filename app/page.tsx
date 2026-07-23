@@ -53,6 +53,12 @@ function LoadingScreen() {
   );
 }
 
+
+
+const About = React.lazy(() => import("./AboutSection"));
+
+
+  
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -74,7 +80,9 @@ export default function Home() {
           <HeroSection />
           
           <LazySection>
-          <AboutSection />
+            <Suspense fallback={<Loading />}>
+              <About />
+            </Suspense>
           </LazySection>
 
           <LazySection>
