@@ -99,7 +99,7 @@ const WhyHire = lazy(() =>
 );
 
 const Contact = lazy(() => 
-  import("../components/sectionsContactSection"). then((module) => ({
+  import("../components/sections/ContactSection"). then((module) => ({
     default: module.ContactSection,
   }))
 );
