@@ -56,7 +56,11 @@ function LoadingScreen() {
 
 
 
-const About = lazy(() => import("../components/sections/AboutSection"));
+const About = lazy(() => 
+  import("../components/sections/AboutSection"). then((module) => ({
+    default: module.AboutSection,
+  }))
+);
 
 
   
