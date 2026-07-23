@@ -1,6 +1,6 @@
 "use client";
 
-import { lazy, Suspense } from "React";
+import { lazy, Suspense } from "react";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Navbar } from "../components/Navbar";
