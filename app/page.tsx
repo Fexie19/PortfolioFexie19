@@ -85,7 +85,7 @@ export default function Home() {
           <HeroSection />
           
           <LazySection>
-            <Suspense fallback={<Loading />}>
+            <Suspense fallback={<div> </div>}>
               <About />
             </Suspense>
           </LazySection>
