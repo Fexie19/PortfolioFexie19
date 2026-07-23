@@ -19,7 +19,7 @@ export default function LazySection({
         }
       },
       {
-        threshold: 5,
+        threshold: 0.1,
       }
     );
 
