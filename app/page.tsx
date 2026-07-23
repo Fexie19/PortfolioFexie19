@@ -104,7 +104,7 @@ const Contact = lazy(() =>
   }))
 );
 
-const Footer = lazy(() => 
+const FooterLazy = lazy(() => 
   import("../components/Footer"). then((module) => ({
     default: module.Footer,
   }))
@@ -180,7 +180,7 @@ export default function Home() {
             
           <LazySection>
             <Suspense fallback={<div> </div>}>
-              <Footer />
+              <FooterLazy />
             </Suspense>
           </LazySection>
           
