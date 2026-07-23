@@ -103,6 +103,12 @@ const Contact = lazy(() =>
     default: module.ContactSection,
   }))
 );
+
+const Footer = lazy(() => 
+  import("../components/Footer"). then((module) => ({
+    default: module.Footer,
+  }))
+);
   
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -172,7 +178,12 @@ export default function Home() {
             </Suspense>
           </LazySection>
             
-          <Footer />
+          <LazySection>
+            <Suspense fallback={<div> </div>}>
+              <Footer />
+            </Suspense>
+          </LazySection>
+          
         </main>
     </>
   );
