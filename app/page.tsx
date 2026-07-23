@@ -62,7 +62,47 @@ const About = lazy(() =>
   }))
 );
 
+const Experience = lazy(() => 
+  import("../components/sections/ExperienceSection"). then((module) => ({
+    default: module.ExperienceSection,
+  }))
+);
 
+const Education = lazy(() => 
+  import("../components/sections/EducationSection"). then((module) => ({
+    default: module.EducationSection,
+  }))
+);
+
+const Skills = lazy(() => 
+  import("../components/sections/SkillsSection"). then((module) => ({
+    default: module.SkillsSection,
+  }))
+);
+
+const Projects = lazy(() => 
+  import("../components/sections/ProjectsSection"). then((module) => ({
+    default: module.ProjectsSection,
+  }))
+);
+
+const Services = lazy(() => 
+  import("../components/sections/ServicesSection"). then((module) => ({
+    default: module.ServicesSection,
+  }))
+);
+
+const WhyHire = lazy(() => 
+  import("../components/sections/WhyHireSection"). then((module) => ({
+    default: module.WhyHireSection,
+  }))
+);
+
+const Contact = lazy(() => 
+  import("../components/sectionsContactSection"). then((module) => ({
+    default: module.ContactSection,
+  }))
+);
   
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -91,31 +131,45 @@ export default function Home() {
           </LazySection>
 
           <LazySection>
-          <ExperienceSection />
+            <Suspense fallback={<div> </div>}>
+              <Experience />
+            </Suspense>
           </LazySection>
           
           <LazySection>
-          <EducationSection />
+            <Suspense fallback={<div> </div>}>
+              <Education />
+            </Suspense>
           </LazySection>
 
           <LazySection>
-          <SkillsSection />
+            <Suspense fallback={<div> </div>}>
+              <Skills />
+            </Suspense>
           </LazySection>
 
           <LazySection>
-          <ProjectsSection />
+            <Suspense fallback={<div> </div>}>
+              <Projects />
+            </Suspense>
           </LazySection>
 
           <LazySection>
-          <ServicesSection />
+            <Suspense fallback={<div> </div>}>
+              <Services />
+            </Suspense>
           </LazySection>
 
           <LazySection>
-          <WhyHireSection />
+            <Suspense fallback={<div> </div>}>
+              <WhyHire />
+            </Suspense>
           </LazySection>
 
           <LazySection>
-          <ContactSection />
+            <Suspense fallback={<div> </div>}>
+              <Contact />
+            </Suspense>
           </LazySection>
             
           <Footer />
